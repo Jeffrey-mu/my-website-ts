@@ -1,6 +1,6 @@
 ---
 slug: vs code SSH免密连接远程服务器
-title: s code SSH免密连接远程服务器
+title: vs code SSH免密连接远程服务器
 authors: Jeffrey
 tags: [vscode, ssh, remote]
 ---
