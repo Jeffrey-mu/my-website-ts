@@ -149,8 +149,8 @@ const config = {
                 href: 'https://github.com/Jeffrey-mu',
               },
               {
-                label: '京ICP备2022014441号',
-                href: 'http://beian.miit.gov.cn',
+                label: '京ICP备2022014441号-1',
+                href: 'https://beian.miit.gov.cn/',
               },
             ],
           },
