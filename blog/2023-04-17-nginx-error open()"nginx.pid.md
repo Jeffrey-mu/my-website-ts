@@ -1,6 +1,6 @@
 ---
-slug: 'nginx: [error] open()/run/nginx.pid failed (2: No such file or directory) '
-title: 'nginx: [error] open()/run/nginx.pid failed (2: No such file or directory) '
+slug: nginx [error] open()(2 No such file or directory)
+title: nginx [error] open()(2 No such file or directory)
 authors: Jeffrey
 tags: [nginx, error]
 ---
