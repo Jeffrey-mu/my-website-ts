@@ -65,11 +65,11 @@ const config = {
       ],
       algolia: {
         // Algolia 提供的应用 ID
-        appId: 'W33HCJSIAT',
+        appId: 'B5G6HHR0FE',
 
         //  公开 API 密钥：提交它没有危险
-        apiKey: 'ada5ecdf3ba3b38c86c1df3a909b8860',
-        indexName: 'test_NAME',
+        apiKey: 'f855095c2bd271b8eac667561419c10d',
+        indexName: 'my-website',
 
         // 可选：见下文
         contextualSearch: true,

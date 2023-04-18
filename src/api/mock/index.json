@@ -5,7 +5,7 @@
       {
         "id": 1,
         "name": "vue-ui-libs",
-        "url": "http://www.jiafengfmc.cn/",
+        "url": "http://vueui.jiafengfmc.cn/",
         "githubLink": "https://github.com/Jeffrey-mu/vue-ui-lib",
         "description": "是一个基于vue3.0 + ts 的ui库 - 仅支持typescript 下使用此组件",
         "type": null,
