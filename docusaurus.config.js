@@ -65,11 +65,11 @@ const config = {
       ],
       algolia: {
         // Algolia 提供的应用 ID
-        appId: 'W33HCJSIAT',
+        appId: 'K9LJ7N55JN',
 
         //  公开 API 密钥：提交它没有危险
-        apiKey: '84dcebd2dabee9d280a33bda52fdf2c7',
-        indexName: 'website',
+        apiKey: 'a61be829e1459082dda9afb8db9df491',
+        indexName: 'jiafengfmccn',
       },
       navbar: {
         title: 'Jeffrey',
