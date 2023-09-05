@@ -1,0 +1,106 @@
+---
+slug: 滑动进入动画
+title: 滑动进入动画
+authors: Jeffrey
+tags: [css, animation]
+---
+
+# 滑动进入动画
+## 示例
+
+<img src='/img/Kapture 2023-09-05 at 16.15.18.gif' />
+
+
+> scss实现：将id `content_html` 内子元素添加滑动进入动画
+
+```scss
+
+#content_html {
+  margin-top: 20px;
+  padding: 0 15px;
+
+  p,
+  li {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  ul,
+  li {
+    list-style: inside;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -.025rem;
+    line-height: 1.8rem;
+    margin: 20px 0;
+    outline: none;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 16px;
+  }
+
+  @keyframes slide-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(10px)
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+
+  * {
+    --stagger: 0;
+    --delay: 150ms;
+    --start: 0ms;
+    animation: slide-enter 1s both 1;
+    animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
+  }
+
+  * {
+    counter-increment: enter-count;
+    --stagger: counter(enter-count);
+  }
+
+  .slide-enter-content>* {
+    --stagger: 0;
+    --delay: 150ms;
+    --start: 0ms;
+    animation: slide-enter 1s both 1;
+    animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
+  }
+
+  @for $i from 1 through 30 {
+    *:nth-child(#{$i}) {
+      --stagger: #{$i};
+    }
+  }
+}
+
+```
+
+
+[参考-antfu](https://antfu.me/posts/sliding-enter-animation)
