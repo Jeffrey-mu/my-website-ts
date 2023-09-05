@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <div dangerouslySetInnerHTML={{__html:ads}}></div>
+      <div dangerouslySetInnerHTML={{ __html: ads }}></div>
       <main>{/* <HomepageFeatures /> */}</main>
     </Layout>
   )

@@ -6,15 +6,14 @@ tags: [css, animation]
 ---
 
 # 滑动进入动画
+
 ## 示例
 
-<img src='/img/Kapture 2023-09-05 at 16.15.18.gif' />
+<img src="/img/Kapture 2023-09-05 at 16.15.18.gif" />
 
-
-> scss实现：将id `content_html` 内子元素添加滑动进入动画
+> scss 实现：将 id `content_html` 内子元素添加滑动进入动画
 
 ```scss
-
 #content_html {
   margin-top: 20px;
   padding: 0 15px;
@@ -39,7 +38,7 @@ tags: [css, animation]
   h6 {
     font-size: 19px;
     font-weight: 700;
-    letter-spacing: -.025rem;
+    letter-spacing: -0.025rem;
     line-height: 1.8rem;
     margin: 20px 0;
     outline: none;
@@ -62,7 +61,7 @@ tags: [css, animation]
   @keyframes slide-enter {
     0% {
       opacity: 0;
-      transform: translateY(10px)
+      transform: translateY(10px);
     }
 
     to {
@@ -70,7 +69,6 @@ tags: [css, animation]
       transform: none;
     }
   }
-
 
   * {
     --stagger: 0;
@@ -85,7 +83,7 @@ tags: [css, animation]
     --stagger: counter(enter-count);
   }
 
-  .slide-enter-content>* {
+  .slide-enter-content > * {
     --stagger: 0;
     --delay: 150ms;
     --start: 0ms;
@@ -99,8 +97,6 @@ tags: [css, animation]
     }
   }
 }
-
 ```
-
 
 [参考-antfu](https://antfu.me/posts/sliding-enter-animation)
