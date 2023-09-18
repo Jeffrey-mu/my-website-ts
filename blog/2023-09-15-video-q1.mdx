@@ -1,0 +1,26 @@
+---
+slug: 移动端禁止video在ios系统中自动全屏播放
+title: 移动端禁止video在ios系统中自动全屏播放
+authors: Jeffrey
+tags: [css, video, ios]
+---
+📺️ 对于iOS系统上的移动端，你可以通过以下方法禁止视频自动全屏播放：
+
+1️⃣ 在`<video>`元素上添加`playsinline`属性，例如：
+```html
+<video src="video.mp4" playsinline></video>
+```
+这将告诉iOS设备在内联模式下播放视频，而不会自动全屏。
+
+2️⃣ 在`<video>`元素上的JavaScript代码中添加`webkit-playsinline`属性，例如：
+```javascript
+var video = document.getElementById('myVideo');
+video.setAttribute('webkit-playsinline', 'true');
+```
+或者直接添加标签中。
+```html
+<video src="video.mp4" playsinline webkit-playsinline='true'></video>
+```
+这也是告诉iOS设备在内联模式下播放视频的方式。
+
+请注意，虽然使用上述方法可以禁止视频自动全屏播放，但用户仍然可以手动切换到全屏模式。
