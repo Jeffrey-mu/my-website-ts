@@ -50,13 +50,25 @@ export default function Home(): JSX.Element {
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({ });
       </script>`
+  const ads2 = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6578177460190720"
+     data-ad-slot="1641167614"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <div dangerouslySetInnerHTML={{ __html: ads }}></div>
+      {/* <div dangerouslySetInnerHTML={{ __html: ads }}></div> */}
+      <hr />
+      <div dangerouslySetInnerHTML={{ __html: ads2 }}></div>
       <main>{/* <HomepageFeatures /> */}</main>
     </Layout>
   )

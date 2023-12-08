@@ -6,6 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  scripts: [
+    '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720" crossorigin="anonymous"></script>'
+  ],
   title: 'Jeffrey',
   tagline: '',
   url: 'https://github.com/Jeffrey-mu/my-website',
