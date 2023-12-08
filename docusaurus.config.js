@@ -7,7 +7,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   scripts: [
-    '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720" crossorigin="anonymous"></script>'
+    // String format.
+    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720',
+    // Object format.
   ],
   title: 'Jeffrey',
   tagline: '',
@@ -65,6 +67,7 @@ const config = {
           content:
             '技术文章, 个人博客, 前端开发, 工具推荐, 资源分享, typescript, golang, javascript, vue, svelte',
         },
+
       ],
       algolia: {
         // Algolia 提供的应用 ID
