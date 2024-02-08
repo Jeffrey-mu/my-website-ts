@@ -20,7 +20,7 @@ function buttonItem(options) {
 }
 const routes = [
   { label: '工作计划', url: 'workPlan' },
-  { label: '我的项目', url: 'myProject' },
+  // { label: '我的项目', url: 'myProject' },
   { label: 'tracking', url: 'tracking' },
 ]
 function HomepageHeader() {
@@ -40,16 +40,23 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
-  const ads = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="fluid"
-        data-ad-layout-key="-6t+ed+2i-1n-4w"
-        data-ad-client="ca-pub-6578177460190720"
-        data-ad-slot="7359464975"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({ });
-      </script>`
+  const ads = `<!--dp-->
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/22985426034/dp', [300, 250], 'div-gpt-ad-1706626560916-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+  <!-- /22985426034/dp -->
+  <div id='div-gpt-ad-1706626560916-0' style='min-width: 300px; min-height: 250px;'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1706626560916-0'); });
+    </script>
+  </div>
+  `
   const ads2 = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
@@ -62,13 +69,16 @@ export default function Home(): JSX.Element {
 </script>`
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Hello from ${siteConfig.title}  IT技术笔记`}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
       {/* <div dangerouslySetInnerHTML={{ __html: ads }}></div> */}
       <hr />
       <div dangerouslySetInnerHTML={{ __html: ads2 }}></div>
+      <hr />
+      <div dangerouslySetInnerHTML={{ __html: ads }}></div>
+
       <main>{/* <HomepageFeatures /> */}</main>
     </Layout>
   )

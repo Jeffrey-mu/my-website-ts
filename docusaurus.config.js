@@ -61,12 +61,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [
-        {
-          name: 'keywords',
-          content:
-            '技术文章, 个人博客, 前端开发, 工具推荐, 资源分享, typescript, golang, javascript, vue, svelte',
-        },
+      metadata: [{
+        name: 'keywords',
+        content: '技术文章, 个人博客, 前端开发, 工具推荐, 资源分享, typescript, golang, javascript, vue, svelte',
+      },
 
       ],
       algolia: {
@@ -83,69 +81,67 @@ const config = {
           alt: 'Jeffrey Logo',
           src: 'img/logo.png',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: '技术笔记',
-          },
-          { to: '/blog', label: '博客', position: 'left' },
-          { to: '/resource', label: '资源推荐', position: 'right' },
-          { to: '/tools', label: '工具软件', position: 'right' },
-          {
-            href: 'https://github.com/Jeffrey-mu',
-            label: 'GitHub',
-            position: 'right',
-          },
+        items: [{
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: '技术笔记',
+        },
+        { to: '/blog', label: '博客', position: 'left' },
+        { to: '/resource', label: '资源推荐', position: 'right' },
+        { to: '/tools', label: '工具软件', position: 'right' },
+        {
+          href: 'https://github.com/Jeffrey-mu',
+          label: 'GitHub',
+          position: 'right',
+        },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: '文档',
-            items: [
-              {
-                label: '笔记',
-                to: '/docs/intro',
-              },
-            ],
+        links: [{
+          title: '文档',
+          items: [{
+            label: '笔记',
+            to: '/docs/intro',
+          },],
+        },
+        {
+          title: '社区',
+          items: [{
+            label: 'Stack Overflow',
+            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
           },
           {
-            title: '社区',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            label: 'Discord',
+            href: 'https://discordapp.com/invite/docusaurus',
           },
           {
-            title: '更多',
-            items: [
-              {
-                label: '博客',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Jeffrey-mu',
-              },
-              {
-                label: '京ICP备2022014441号-1',
-                href: 'https://beian.miit.gov.cn/',
-              },
-            ],
+            label: 'Twitter',
+            href: 'https://twitter.com/docusaurus',
           },
+          ],
+        },
+        {
+          title: '更多',
+          items: [{
+            label: '博客',
+            to: '/blog',
+          },
+          {
+            label: 'GitHub',
+            href: 'https://github.com/Jeffrey-mu',
+          },
+          // {
+          //   label: '京ICP备2022014441号-1',
+          //   href: 'https://beian.miit.gov.cn/',
+          // },
+          {
+            label: '冀ICP备20018505号',
+            href: 'https://beian.miit.gov.cn/',
+          },
+          ],
+        },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
