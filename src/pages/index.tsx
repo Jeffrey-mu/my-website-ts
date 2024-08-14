@@ -19,7 +19,7 @@ function buttonItem(options) {
   )
 }
 const routes = [
-  { label: '工作计划', url: 'workPlan' },
+  // { label: '工作计划', url: 'workPlan' },
   // { label: '我的项目', url: 'myProject' },
   // { label: 'tracking', url: 'tracking' },
 ]
