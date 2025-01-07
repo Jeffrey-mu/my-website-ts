@@ -11,6 +11,12 @@ const config = {
     'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6578177460190720',
     // Object format.
   ],
+  stylesheets: [
+    {
+      href: '/css/custom-tailwind.css',
+      type: 'text/css',
+    },
+  ],
   title: 'Jeffrey',
   tagline: '',
   url: 'https://github.com/Jeffrey-mu/my-website',
@@ -56,12 +62,6 @@ const config = {
         },
       }),
     ],
-  ],
-  stylesheets: [
-    {
-      href: '/src/css/custom.css',
-      type: 'text/css',
-    },
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
