@@ -8,7 +8,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -36,17 +35,30 @@
 /* Markdown 样式 */
 .markdown {
   /* 标题样式 */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
   }
 
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.25rem; }
-  h4 { font-size: 1rem; }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
 
   /* 段落样式 */
   p {
@@ -55,7 +67,8 @@
   }
 
   /* 列表样式 */
-  ul, ol {
+  ul,
+  ol {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
   }
@@ -105,7 +118,8 @@
     margin: 1rem 0;
   }
 
-  th, td {
+  th,
+  td {
     padding: 0.75rem;
     border: 1px solid #ddd;
   }
@@ -134,7 +148,8 @@
     background-color: #2d2d2d;
   }
 
-  th, td {
+  th,
+  td {
     border-color: #444;
   }
 }

@@ -2,8 +2,8 @@ import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
@@ -27,10 +27,21 @@ function HomepageHeader() {
                 height="20"
                 patternUnits="userSpaceOnUse"
               >
-                <rect x="0" y="0" width="4" height="4" className="text-slate-200" fill="currentColor" />
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-slate-200"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
-            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+            <rect
+              width="404"
+              height="784"
+              fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+            />
           </svg>
         </div>
       </div>
@@ -78,20 +89,20 @@ function ImageCarousel() {
   const images = [
     {
       url: 'https://picsum.photos/800/400?random=1',
-      title: '技术'
+      title: '技术',
     },
     {
       url: 'https://picsum.photos/800/400?random=2',
-      title: '编程'
+      title: '编程',
     },
     {
       url: 'https://picsum.photos/800/400?random=3',
-      title: '代码'
+      title: '代码',
     },
     {
       url: 'https://picsum.photos/800/400?random=4',
-      title: '开发'
-    }
+      title: '开发',
+    },
   ]
 
   const settings = {
@@ -102,7 +113,7 @@ function ImageCarousel() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: true
+    pauseOnHover: true,
   }
 
   return (
@@ -117,7 +128,9 @@ function ImageCarousel() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                <h3 className="text-white text-xl font-semibold">{image.title}</h3>
+                <h3 className="text-white text-xl font-semibold">
+                  {image.title}
+                </h3>
               </div>
             </div>
           </div>

@@ -10,10 +10,10 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: '#3B82F6', // 你可以调整这个颜色
-          dark: '#2563EB',    // 以及这个颜色
-        }
-      }
-    }
+          dark: '#2563EB', // 以及这个颜色
+        },
+      },
+    },
   },
   plugins: [],
-};
+}
