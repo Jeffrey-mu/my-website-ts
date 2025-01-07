@@ -57,7 +57,12 @@ const config = {
       }),
     ],
   ],
-
+  stylesheets: [
+    {
+      href: '/src/css/custom.css',
+      type: 'text/css',
+    },
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
