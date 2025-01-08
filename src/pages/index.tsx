@@ -177,9 +177,7 @@ export default function Home(): React.ReactElement {
       <HomepageHeader />
       <ImageCarousel />
       {/* <div dangerouslySetInnerHTML={{ __html: ads }}></div> */}
-      <hr />
       <div dangerouslySetInnerHTML={{ __html: ads2 }}></div>
-      <hr />
       <div dangerouslySetInnerHTML={{ __html: ads }}></div>
 
       <main>{/* <HomepageFeatures /> */}</main>
