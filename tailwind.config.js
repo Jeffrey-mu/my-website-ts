@@ -15,5 +15,8 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    preflight: false, // 关闭 Tailwind 的全局样式重置
+  },
   plugins: [],
 }
